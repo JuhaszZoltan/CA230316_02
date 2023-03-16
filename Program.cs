@@ -10,10 +10,10 @@ string pwd = Console.ReadLine()!;
 Console.ResetColor();
 
 string conStr = 
-    "SERVER = 172.16.1.241;" +
+    "SERVER    = 172.16.1.241;" +
     $"DATABASE = {uid};" +
-    $"UID = {uid};" +
-    $"PWD = {pwd};";
+    $"UID      = {uid};" +
+    $"PWD      = {pwd};";
 
 using MySqlConnection conn = new(conStr);
 conn.Open();
